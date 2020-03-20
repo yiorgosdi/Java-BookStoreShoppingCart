@@ -64,5 +64,16 @@ public class ShoppingCart {
 			e.printStackTrace();
 		}
 	}
+	
+	public void updateCartItem(int index, int quantity) {
+		try {
+			CartItem cartItem = (CartItem)cartItems.get(index); 
+			cartItem.setQuantity(quantity);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+	}
+	
 
 }
